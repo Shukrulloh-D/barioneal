@@ -24,14 +24,16 @@
   gap: 72px;
   font-size: 14px;
 }
-
+.nav a:hover{
+  color: #ad2c2c;
+}
 .nav a {
   color: #1a1a1a;
   transition: opacity 0.2s;
 }
 
 .nav a:hover {
-  opacity: 0.6;
+  opacity: 1.6;
 }
 
 .cart {
