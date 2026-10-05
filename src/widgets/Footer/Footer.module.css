@@ -1,0 +1,96 @@
+.footer {
+  background: #ffffff;
+  padding: 100px 0 40px;
+}
+
+/* Верхние 5 колонок */
+.columns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  margin-bottom: 120px;
+}
+
+.colTitle {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+}
+
+.col a {
+  display: block;
+  font-size: 14px;
+  color: #6b6b6b;
+  margin-bottom: 12px;
+  transition: color 0.2s;
+}
+
+.col a:hover { color: #1a1a1a; }
+
+/* Центральный блок */
+.center {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.centerTitle {
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 48px;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.subscribe input {
+  flex: 1;
+  padding: 16px 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 100px;
+  font-size: 14px;
+  outline: none;
+}
+
+.subscribe input:focus { border-color: #c9d9c2; }
+
+.subscribe button {
+  padding: 16px 40px;
+  background: #c9d9c2;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.subscribe button:hover { background: #b5c8ae; }
+
+.captcha {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Нижняя строка */
+.bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+  padding-top: 40px;
+  border-top: 1px solid #eaeaea;
+}
+
+@media (max-width: 900px) {
+  .columns { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .centerTitle { font-size: 32px; }
+  .subscribe { flex-direction: column; }
+  .subscribe input,
+  .subscribe button { width: 100%; }
+}

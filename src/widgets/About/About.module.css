@@ -1,0 +1,30 @@
+.section {
+  background: #e5dfd3;
+  padding: 140px 0;
+  text-align: center;
+}
+
+.topIcon {
+  width: 120px;
+  margin: 0 auto 12px;
+}
+
+.label {
+  font-size: 13px;
+  color: #1a1a1a;
+  margin-bottom: 60px;
+}
+
+.bigText {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .bigText { font-size: 26px; }
+  .section { padding: 80px 0; }
+}

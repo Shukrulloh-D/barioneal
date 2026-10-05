@@ -1,0 +1,55 @@
+.top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+}
+
+.topImage {
+  background-image: url('/images/love.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.topContent {
+  background: #c9d9e8;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 28px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 36px;
+  max-width: 500px;
+}
+
+/* Галерея снизу */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .top { grid-template-columns: 1fr; }
+  .topContent { padding: 60px 24px; }
+  .title { font-size: 34px; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+}

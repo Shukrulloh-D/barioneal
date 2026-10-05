@@ -1,0 +1,58 @@
+.section { background: #c9d9c2; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 620px;
+}
+
+.image {
+  background-image: url('/images/ethical.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 620px;
+}
+
+.content {
+  padding: 100px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 36px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 44px;
+  max-width: 480px;
+}
+
+/* Нижняя полоса с тегами — на всю ширину секции */
+.tags {
+  background: #ffffff;
+  padding: 24px 0;
+}
+
+.tagsInner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+  .image { min-height: 400px; }
+  .content { padding: 60px 24px; }
+  .title { font-size: 34px; }
+}
