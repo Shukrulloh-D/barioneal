@@ -1,16 +1,68 @@
-# React + Vite
+## 📋 О проекте
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Задание
 
-Currently, two official plugins are available:
+Сверстать одностраничный сайт ювелирного бренда (Bario-Neal — Custom Jewelry | Wedding Rings): лендинг с блоками «Hero», «Wedding & Engagement», «An Ethical Approach», бегущая строка преимуществ, «About Us», «Our Jewelry», «Custom Design», бегущая строка «Check Out Our Blog», «Love in All Ways», Instagram-галерея и футер с подпиской на рассылку. Сайт одностраничный (десктоп + адаптив под планшет и мобильные устройства), навигация по якорям.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Общие элементы
 
-## React Compiler
+Верхняя плашка — тонкая светло-голубая полоса над шапкой с двумя ссылками по центру («Read our…», «Customer Reviews» — уточнить по макету). Шапка — светлый кремовый фон; горизонтальное меню по центру («Engagement», «Wedding», «Custom», «Fine Jewelry», «Ethics», «About»); справа иконка (корзина / аккаунт — уточнить); логотип — уточнить по макету. Боковой ярлык — вертикальная персиковая вкладка, закреплённая у левого края экрана (назначение — отзывы / бонусы / обратная связь — уточнить). Футер — кремовый фон, колонки ссылок слева и справа, по центру слоган и форма подписки. Сквозная схема — светлые секции чередуются с цветными пастельными: шалфейно-зелёный («An Ethical Approach», «Custom Design»), бежево-серый («About Us»), светло-голубой («Love in All Ways», верхняя плашка); белый фон у каталожных секций. Кнопки — светлые «таблетки» с сильным скруглением и тонким текстом («Shop Rings», «Book Appointment», «Learn More», «Get Inspired», «Get an Estimate»). Надзаголовки секций — мелкий текст над заголовком («Handcrafted Jewelry», «Sustainability», «About Us», «Consciously Made», «Tradition in the Making», «The Heart of It»); заголовки — средние, обычного (не жирного) начертания.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Блоки
 
-## Expanding the ESLint configuration
+Hero — полноэкранное фото модели с украшениями на тёплом бежево-коричневом фоне; слева снизу заголовок в две строки («We Find Always / in All Ways»), короткий текст о философии бренда («Our design ethos is grounded in…» — уточнить по макету) и светлая кнопка-таблетка «Shop Rings»; справа снизу — светло-голубая кнопка «Book Appointment». В макете есть второй фрейм hero («Custom Jewelry | Wedding Ri…») — уточнить, является ли он альтернативным вариантом первого экрана.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Wedding & Engagement — надзаголовок «Handcrafted Jewelry», заголовок «Wedding & Engagement» по центру; сетка из четырёх карточек с единообразной структурой: квадратное фото украшения на светлом пьедестале — подпись категории по центру («Cluster Rings», «Bands», «Rings», «Custom Design» — уточнить по макету).
+
+An Ethical Approach — блок в две колонки: слева тёмное фото рук с золотым кольцом на всю высоту блока; справа шалфейно-зелёный фон, надзаголовок «Sustainability», заголовок «An Ethical Approach», абзац («Making jewelry requires responsibility to the earth that creates our materials and respect for the people who inhabit it…» — уточнить) и белая кнопка-таблетка «Learn More».
+
+Бегущая строка преимуществ — тонкая белая полоса с пятью короткими пунктами в одну строку («Sustainable Gems», «Reclaimed Metals», «Love in All Ways» и т.п. — уточнить по макету), прокручивается горизонтально (marquee).
+
+About Us — бежево-серый фон; надзаголовок «About Us» по центру, небольшое изображение кольца, ниже крупный центрированный текст-манифест («Each Bario-Neal piece is crafted with ethically sourced precious metals to reflect our commitment to human rights and environmental sustainability.»); декоративный круглый элемент поверх текста (уточнить: статичная картинка или элемент, следующий за курсором).
+
+Our Jewelry — надзаголовок «Consciously Made», заголовок «Our Jewelry»; сетка из четырёх карточек той же структуры, что в «Wedding & Engagement» («Rings», «Bracelets», «Necklaces», «Earrings»).
+
+Custom Design — шалфейно-зелёный фон, две колонки: слева надзаголовок «Tradition in the Making», заголовок «Custom Design», абзац («Whether you want to create a future heirloom that can be passed down or re-envision a current heirloom…» — уточнить) и две белые кнопки-таблетки «Get Inspired» и «Get an Estimate»; справа коллаж из двух фото украшений в органичных фигурах неправильной формы (blob-маски), частично перекрывающих друг друга.
+
+Бегущая строка «Check Out Our Blog» — тонкая белая полоса с повторяющейся ссылкой «Check Out Our Blog», горизонтальная прокрутка (marquee), ведёт в блог.
+
+Love in All Ways — две колонки: слева фото пары на всю высоту блока; справа светло-голубой фон, надзаголовок «The Heart of It», заголовок «Love in All Ways», абзац об инклюзивности («We embrace love in all forms…» — уточнить) и белая кнопка «Learn More».
+
+Instagram-галерея — горизонтальная лента из квадратных фото украшений на руках и камней, от края до края; справа кнопка-стрелка для прокрутки; под лентой справа подпись-ссылка на аккаунт («@barioneal» — уточнить).
+
+Футер — кремовый фон; слева три колонки ссылок: «Get in Touch» (Contact, Appointments, Philadelphia Shop, NYC Shop, Newsletter, Get an Estimate), «About» (Who We Are, Blog, Careers, Reviews, Press), «Social» (Instagram, Facebook, Twitter, Pinterest); по центру слоган «We Find Always in All Ways.» и форма подписки (поле «Email Address» + шалфейно-зелёная кнопка отправки + капча); справа две колонки: «Policy» (Log In, Privacy, Terms, Returns & Exchanges, Accessibility) и «FAQs» (Warranty & Repairs, Ring Sizing, Jewelry Care, Hand Made For You, Shipping, International Orders, Pricing, Covid Updates) — уточнить по макету.
+
+Адаптивность
+
+Десктоп — меню по центру шапки; hero на всю ширину с текстом слева снизу и кнопкой записи справа; каталожные сетки — 4 колонки; блоки «An Ethical Approach», «Custom Design», «Love in All Ways» — 50/50 (фото + текст); Instagram-лента — 4–5 видимых фото; футер — 5 колонок ссылок + центральный блок подписки.
+
+Планшет — меню сворачивается в бургер; верхняя плашка сохраняется; каталожные сетки — 2 колонки; блоки 50/50 остаются в две колонки или перестраиваются в столбец (фото сверху); коллаж в «Custom Design» уменьшается; Instagram-лента — 3 видимых фото; футер — блок подписки сверху, колонки ссылок в сетку 3 колонки.
+
+Мобильная версия — всё в один стек, заголовки и манифест в «About Us» уменьшаются; текст hero поверх фото с затемнением или под фото, кнопки «Shop Rings» и «Book Appointment» — друг под другом на всю ширину; каталожные сетки — 2 колонки или горизонтальный свайп; блоки 50/50 — фото над текстом; бегущие строки сохраняются; Instagram-лента листается свайпом; колонки ссылок футера — аккордеоном или сеткой 2 колонки, форма подписки — на всю ширину; боковой ярлык уменьшается или переносится вниз экрана.
+
+Интерактив
+
+Бургер-меню на планшете и мобильных; плавный скролл по якорным ссылкам; бегущие строки (бесконечная горизонтальная анимация, пауза при наведении); слайдер Instagram-ленты с кнопкой-стрелкой и свайпом; закреплённый боковой ярлык (открывает виджет / ссылку — уточнить); hover-состояния кнопок-таблеток, ссылок меню и футера, карточек каталога (лёгкое увеличение фото или смена изображения); форма подписки с валидацией email; кнопка «Book Appointment» — переход к форме записи (уточнить); «Shop Rings», «Learn More», «Get Inspired», «Get an Estimate» — переход на соответствующие страницы / якоря (уточнить).
+
+Дизайн
+
+Мягкий, «тихий» премиальный стиль: много воздуха, светлый кремовый базовый фон и чередование пастельных секций (шалфейно-зелёный, бежево-серый, светло-голубой), персиковый акцент бокового ярлыка; лёгкий гротеск (Inter / Roboto — уточнить по макету) обычного и светлого начертания, заголовки без жирности, мелкие надзаголовки; кнопки-таблетки с полным скруглением, светлые с тонким текстом; тёплые естественные фотографии украшений и людей; каталожные фото на однотонном светлом фоне в едином стиле; органичные blob-формы в коллаже; единообразная структура карточек каталога и колонок футера.
+
+Сверстать по макету в Figma:
+[https://www.figma.com/design/Yk0qTRFHSf8RbrlxuIjhzV/Untitled--Copy-?node-id=0-1&p=f&t=mlupYPDhSGrhidCV-0](https://www.figma.com/design/Yk0qTRFHSf8RbrlxuIjhzV/Untitled--Copy-?node-id=0-1&p=f&t=mlupYPDhSGrhidCV-0)
+
+
+
+## 🚀 Как запустить
+
+Понадобится Node.js версии 18 или выше.
+
+```bash
+# 1. Установить зависимости
+npm install
+
+# 2. Запустить dev-сервер
+npm run dev
+
+# 3. Открыть в браузере
+# http://localhost:5173
