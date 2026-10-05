@@ -11,7 +11,7 @@ function About() {
           Each Barioneal piece is crafted with ethically sourced precious
           metals to reflect our commitment to human rights and environmental
           sustainability.
-        </h2>
+        </h2> 
       </div>
     </section>
   );

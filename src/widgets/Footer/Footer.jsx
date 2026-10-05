@@ -63,10 +63,6 @@ function Footer() {
             <span className={styles.captcha}>CAPTCHA</span>
           </form>
         </div>
-
-        <div className={styles.bottom}>
-          © 2024 Barioneal. All rights reserved.
-        </div>
       </div>
     </footer>
   );

@@ -8,7 +8,7 @@ function CustomDesign() {
         <div className={styles.content}>
           <span className="eyebrow">Tradition in the Making</span>
           <h2 className={styles.title}>Custom Design</h2>
-
+ 
           <p className={styles.text}>
             Whether you want to create a future heirloom that can be passed
             down or re-envision a current heirloom while maintaining its

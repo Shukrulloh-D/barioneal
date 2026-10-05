@@ -1,10 +1,10 @@
 import styles from './OurJewelry.module.css';
 
 const items = [
-  { label: 'Rings',      image: '/images/jewelry-1.jpg' },
-  { label: 'Bracelets',  image: '/images/jewelry-2.jpg' },
-  { label: 'Necklaces',  image: '/images/jewelry-3.jpg' },
-  { label: 'Earrings',   image: '/images/jewelry-4.jpg' },
+  { label: 'Rings',      image: '/images/jewelry-1.png' },
+  { label: 'Bracelets',  image: '/images/jewelry-2.png' },
+  { label: 'Necklaces',  image: '/images/jewelry-3.png' },
+  { label: 'Earrings',   image: '/images/jewelry-4.png' },
 ];
 
 function OurJewelry() {

@@ -1,68 +1,56 @@
 .hero {
   position: relative;
   height: 100vh;
-  min-height: 780px;
+  min-height: 700px;
   background-image: url('/images/hero-woman.png');
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 160px;
+  align-items: flex-end;
+  padding-bottom: 60px;
 }
 
-.center {
-  text-align: center;
+.content {
   color: #ffffff;
-  max-width: 700px;
+  max-width: 500px;
 }
 
 .title {
-  font-size: 72px;
+  font-size: 56px;
   font-weight: 400;
-  line-height: 1.05;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: 20px;
 }
 
 .subtitle {
   font-size: 16px;
-  margin-bottom: 40px;
+  line-height: 1.5;
+  margin-bottom: 32px;
   opacity: 0.9;
 }
 
-/* нижняя плашка с двумя кнопками по краям */
 .actions {
-  position: absolute;
-  bottom: 60px;
-  left: 0;
-  right: 0;
-}
-
-.actionsInner {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-/* REVIEWS — вертикальная плашка слева */
+/* Левая вертикальная плашка REVIEWS */
 .reviews {
   position: absolute;
   left: 0;
   top: 40%;
   background: #f5c9b8;
-  padding: 30px 14px;
+  padding: 24px 12px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-size: 11px;
-  letter-spacing: 0.4em;
+  font-size: 12px;
+  letter-spacing: 0.3em;
   color: #1a1a1a;
-  z-index: 5;
 }
 
 @media (max-width: 900px) {
-  .title { font-size: 42px; }
+  .title { font-size: 36px; }
   .reviews { display: none; }
-  .actionsInner { flex-direction: column; gap: 12px; }
-  .actions { bottom: 30px; }
 }

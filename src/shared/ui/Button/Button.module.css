@@ -8,13 +8,14 @@
   font-weight: 500;
   transition: all 0.2s ease;
   white-space: nowrap;
+  border: 5px solid transparent;
 }
 
 .btn--light {
   background: #f8f5f0;
   color: #1a1a1a;
 }
-.btn--light:hover { background: #ffffff; }
+.btn--light:hover { background: #4eff02; }
 
 .btn--primary {
   background: #c9d9c2;

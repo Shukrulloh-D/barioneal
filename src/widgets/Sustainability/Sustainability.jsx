@@ -18,7 +18,7 @@ function Sustainability() {
               one, we committed to creating designs of ethical origins from
               mine to market.
             </p>
-
+ 
             <div>
               <Button variant="light">Learn More</Button>
             </div>

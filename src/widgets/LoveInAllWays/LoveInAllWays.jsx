@@ -17,7 +17,7 @@ function LoveInAllWays() {
             step, from a non-gendered design ethos and comprehensive sizing
             to our founding belief in marriage equality and the right to
             love who you choose.
-          </p>
+          </p> 
 
           <div>
             <Button variant="light">Learn More</Button>

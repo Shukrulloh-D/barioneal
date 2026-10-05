@@ -1,3 +1,5 @@
+
+
 .footer {
   background: #ffffff;
   padding: 100px 0 40px;
@@ -8,11 +10,11 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 40px;
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
 }
 
 .colTitle {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 24px;
   color: #1a1a1a;
@@ -21,12 +23,12 @@
 .col a {
   display: block;
   font-size: 14px;
-  color: #6b6b6b;
+  color: hsl(0, 0%, 0%);
   margin-bottom: 12px;
   transition: color 0.2s;
 }
 
-.col a:hover { color: #1a1a1a; }
+.col a:hover { color: hsl(0, 0%, 0%); }
 
 /* Центральный блок */
 .center {
@@ -75,16 +77,7 @@
 
 .captcha {
   font-size: 12px;
-  color: #999;
-}
-
-/* Нижняя строка */
-.bottom {
-  text-align: center;
-  font-size: 13px;
-  color: #999;
-  padding-top: 40px;
-  border-top: 1px solid #eaeaea;
+  color: #000000;
 }
 
 @media (max-width: 900px) {

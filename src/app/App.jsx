@@ -8,7 +8,7 @@ import CustomDesign from 'widgets/CustomDesign/CustomDesign';
 import LoveInAllWays from 'widgets/LoveInAllWays/LoveInAllWays';
 import Footer from 'widgets/Footer/Footer';
 
-function App() {
+function App() { 
   return (
     <>
       <Header />

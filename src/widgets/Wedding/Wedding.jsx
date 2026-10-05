@@ -26,5 +26,5 @@ function Wedding() {
     </section>
   );
 }
-
+ 
 export default Wedding;
